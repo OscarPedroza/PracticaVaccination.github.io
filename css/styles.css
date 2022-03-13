@@ -445,6 +445,10 @@ ESTILOS DEL FOOTER
 ===================
 */
 
+.footer .container {
+    padding-top: 5px;
+}
+
 .footer {
     padding-top: 75px;
     padding-bottom: 30px;

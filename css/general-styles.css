@@ -56,6 +56,7 @@ h3 {
     width: 100%;
     margin: 0 auto;
     padding: 0 90px;
+    overflow: hidden;
 }
 
 .button {
