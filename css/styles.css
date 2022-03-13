@@ -1,0 +1,814 @@
+/*
+==================
+ESTILOS DEL HEADER
+==================
+*/
+
+.header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    padding: 35px 0;
+    background-color: rgba(255, 255, 255, 0.877);
+    transition: background-color 0.4s ease;
+    transition: padding 0.3s ease;
+    /*background: linear-gradient(to right, var(--white) 50%, #e6f4fc 50%);*/
+}
+
+.header.solid {
+    background-color: var(--white);
+    padding: 25px 0;
+    box-shadow: -10px 1px 10px -1px rgba(92, 176, 185, 0.23);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-title {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 0;
+    color: #164DBC;
+    cursor: pointer;
+}
+
+.nav-items {
+    list-style: none;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-left: 45px;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: var(--dark-gray);
+
+    transition: color ease 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--light-blue)
+}
+
+.menu-icon {
+    opacity: 0;
+    cursor: pointer;
+    font-size: 23px;
+    color: var(--dark-blue);
+}
+
+/*
+================
+ESTILOS DEL HERO
+================
+*/
+
+.hero {
+    position: relative;
+    background: linear-gradient(to right, transparent 50%, #0b95e5 50% , #2b6edd );
+}
+
+.hero-column {
+    padding-top: 205px;
+    width: 50%;
+}
+
+.hero-column-1 {
+    position: relative;
+    padding-right: 140px;
+}
+
+.hero-title {
+    margin-bottom: 30px;
+    font-size: 50px;
+    color: var(--dark-blue);
+}
+
+.hero-text {
+    margin-bottom: 50px;
+}
+
+.hero-icons {
+    margin-bottom: 135px;
+}
+
+.hero-icons span {
+    margin-right: 35px;
+    font-size: 15px;
+    color: var(--purple);
+}
+
+.hero-icons span:last-child {
+    margin-right: 0px;
+}
+
+.hero-icons i{
+    margin-right: 12px;
+    color: #ffd012;
+}
+
+.shedule-vaccinations {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+.shedule-vaccinations i {
+    margin-right: 12px;
+    font-size: 16px;
+    color: var(--light-blue);
+    box-shadow: 1px 10px 29px -1px rgba(92, 176, 185, 0.23);
+}
+
+.form {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding: 35px 35px;
+    background: rgba(255, 255, 255, 0.925);
+    border-radius: 5px;
+    box-shadow: 1px 21px 29px -1px rgba(92, 176, 185, 0.23);
+}
+
+.form-column {
+    margin-right: 30px;
+}
+
+.form-column:last-child {
+    margin-left: 30px;
+    margin-right: 0;
+}
+
+.form-title {
+    font-size: 17.5px;
+    margin-bottom: 5px;
+}
+
+.form-title i {
+    margin-right: 8px;
+    font-size: 14px;
+    color: var(--light-blue);
+}
+
+.form-select,
+.form-input {
+    margin-left: 37px;
+    font-size: 19px;
+    font-weight: 700;
+    background: transparent;
+    color: var(--dark-blue);
+    border: none;
+}
+
+.button-form {
+    padding: 12px 35px;
+}
+
+.triangle-down {
+    top: 112px;
+    transform: translateX(-50%);
+    border-top: 75px solid #f4f6fb;
+    border-left: 78px solid transparent;
+    border-right: 78px solid transparent;
+}
+
+.triangle-right {
+    bottom: 33%;
+    right: 1px;
+    border-top: 118px solid transparent;
+    border-right: 113px solid #f4f6fb;
+    border-bottom: 113px solid transparent;
+}
+
+.hero-column-2 {
+    display: flex;
+}
+
+.hero-column-2 img {
+    padding-left: 115px;
+}
+
+/*
+=====================================
+ESTILOS DE LA SECCIÓN TIPO DE VACUNAS
+=====================================
+*/
+
+.vaccine-type {
+    padding-top: 80px;
+}
+
+.vaccine-column {
+    width: 25%;
+    text-align: center;
+}
+
+/*
+===========================================
+ESTILOS DE LA SECCIÓN WHY SHOULD I VACCINE?
+===========================================
+*/
+
+.why-vaccinate {
+    position: relative;
+}
+
+.paragraph-half {
+    width: 45%;
+}
+
+.benefits-container {
+    margin-top: 60px;
+}
+
+.benefits-column {
+    width: 25%;
+    margin-right: 20px;
+    padding: 25px 25px 60px;
+    border: 1px solid var(--light-gray);
+    border-radius: 6px;
+
+    transition: box-shadow 0.3s ease;
+}
+
+.benefits-column:hover {
+    box-shadow: 1px 21px 29px -1px rgba(92, 176, 185, 0.23);
+}
+
+.benefits-column:last-child {
+    margin-right: 0;
+}
+
+.benefits-column h3 {
+    width: 90%;
+    margin-bottom: 17px;
+}
+
+.benefits-column i {
+    margin-bottom: 23px;
+    padding: 15px;
+    font-size: 23px;
+    color: var(--light-blue);
+    border-radius: 6px;
+}
+
+.benefits-column i:hover {
+    box-shadow: 1px 21px 29px -1px rgba(92, 176, 185, 0.23);
+}
+
+.benefits-column p {
+    font-size: 13px;
+}
+
+/*
+========================================
+ESTILOS DE LA SECCIÓN PREPARATION BEFORE
+========================================
+*/
+
+.preparations-before {
+    position: relative;
+}
+
+.preparations-column {
+    width: 50%;
+    padding-right: 35px;
+}
+
+.preparations-column:last-child {
+    padding-left: 40px;
+    padding-right: 0;
+}
+
+.preparations-column img {
+    margin-top: 100px;
+}
+
+.preparations-paragraph {
+    width: 94%;
+    margin-bottom: 40px;
+}
+
+/* Acordión */
+.accordion-box{
+    width: 90%;
+    padding: 27px 35px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.accordion-box:hover {
+    box-shadow: 1px 21px 29px -1px rgba(92, 176, 185, 0.23);
+}
+
+.accordion-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-label h4 {
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+.accordion-label h4 i {
+    margin-right: 20px;
+    color: var(--light-blue);
+}
+
+.acordion-content {
+    position: relative;
+    height: 0;
+    padding-left: 50px;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+
+.accordion-box.active {
+    box-shadow: 1px 17px 29px -1px rgba(92, 176, 185, 0.23);
+}
+
+.accordion-box.active .acordion-content {
+    padding-top: 22px;
+    padding-left: 50px;
+    height: 95px;
+}
+
+.acordion-content p{
+    font-size: 13px;
+}
+
+.icon-arrow {
+    padding: 4px 6px;
+    font-size: 13px;
+    color: var(--light-blue);
+}
+
+/*
+=======================================
+ESTILOS DE LA SECCIÓN EMERGENCY CONTACT
+=======================================
+*/
+
+.emergency-contact {
+    position: relative;
+}
+
+.contact-column {
+    width: 50%;
+    padding-right: 40px;
+}
+
+.contact-column:last-child {
+    padding-left: 35px;
+    padding-right: 0;
+}
+
+.emergency-img {
+    margin-top: 120px;
+}
+
+.emergency-text {
+    margin-bottom: 112px;
+}
+
+.contact-means {
+    display: flex;
+}
+
+.contact-mean {
+    width: 50%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 40px 30px;
+    border: 1px solid var(--light-gray);
+    border-radius: 6px;
+}
+
+.contact-mean:last-child {
+    margin-right: 0;
+}
+
+.contact-mean:hover {
+    box-shadow: 1px 21px 29px -1px rgba(92, 176, 185, 0.23);
+}
+
+.contact-mean .button {
+    width: 100%;
+    font-size: 16.5px;
+    font-weight: 600;
+    background-color: var(--light-gray);
+    color: var(--light-blue);
+    box-shadow: none;
+}
+
+.contact-mean .button:hover {
+    background-color: var(--light-blue);
+    color: var(--white);
+    box-shadow: 1px 17px 20px -8px rgba(23,54,140,0.33);
+}
+
+.contact-group{
+    display: flex;
+    align-items: center;
+    margin-bottom: 34px;
+}
+
+.contact-group i {
+    margin-right: 20px;
+    padding: 13px;
+    font-size: 22px;
+    color: var(--light-blue);
+}
+
+.contact-group i:hover {
+    box-shadow: 1px 21px 29px -1px rgba(92, 176, 185, 0.23);
+}
+
+.contact-group span {
+    display: block;
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--dark-gray);
+}
+
+/*
+==================
+ESTILOS DEL FOOTER
+===================
+*/
+
+.footer {
+    padding-top: 75px;
+    padding-bottom: 30px;
+    width: 100%;
+    background: var(--light-gray);
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.footer-column-50 {
+    width: 50%;
+}
+
+.footer-column-33 {
+    width: 16.66%;
+}
+
+.footer-title {
+    display: inline-block;
+    margin-bottom: 32px;
+}
+
+.footer-description {
+    font-size: 15px;
+    width: 35%;
+}
+
+.footer-list {
+    list-style-type: none;
+}
+
+.footer-list li {
+    margin-bottom: 25px;
+}
+
+.footer-list h3{
+    font-weight: 700;
+}
+
+.footer-list a{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--dark-gray);
+}
+
+.footer-list a:hover{
+    color: var(--light-blue)
+}
+
+.footer-credits {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.footer-credits a {
+    margin-left: 22px;
+    font-weight: 600;
+    color: var(--dark-gray);
+}
+
+/*
+===============================
+ESTILOS DE LA PÁGINA RESPONSIVE
+===============================
+*/
+
+@media (max-width: 1060px) {
+    .hero-column-2 img {
+        padding-left: 0px;
+    }
+}
+
+
+@media (max-width: 980px) {
+    .container {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    /*
+    =================
+    HEADER RESPONSIVE
+    =================
+    */
+    .header.solid {
+        padding: 35px 0;
+        box-shadow: -10px 1px 10px -1px rgba(92, 176, 185, 0.23);
+    }
+
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .nav-items {
+        display: none;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .nav-items.active {
+        display: block;
+    }
+
+    .nav-item {
+        margin-left: 0;
+        margin-bottom: 20px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-icon {
+        opacity: 1;
+    }
+
+    /*
+    =================
+    HERO RESPONSIVE
+    =================
+    */
+
+    .hero {
+        padding-top: 94px;
+        background: none;
+    }
+
+    .hero-container {
+        flex-direction: column;
+    }
+
+    .hero-column {
+        padding: 0;
+        padding-top: 50px;
+        width: 100%;
+    }
+
+    .hero-column-2 {
+        margin-top: 40px;
+        background: linear-gradient(to right, #0b95e5, #2b6edd );
+    } 
+
+    .hero-title {
+        font-size: 42px;
+    }
+
+    .hero-icons {
+        margin-bottom: 60px;
+    }
+
+    .hero-icons span{
+        display: block;
+        margin-bottom: 17px;
+    }
+
+    .hero-icons span:last-child{
+        margin-bottom: 0px;
+    }
+
+    .triangle-down {
+        top: 0;
+        left: 10px;
+        border-top: 45px solid #f4f6fb;
+        border-left: 48px solid transparent;
+        border-right: 48px solid transparent;
+    }
+
+    .triangle-right {
+        top: 60%;
+        right: -30px;
+        border-top: 88px solid transparent;
+        border-right: 83px solid #f4f6fb;
+        border-bottom: 83px solid transparent;
+    }
+
+    .form {
+        position: relative;
+        display: block;
+        background-color: white;
+    }
+
+    .form-column {
+        margin: 0px;
+        margin-bottom: 25px;
+    }
+
+    .form-column:last-child {
+        margin-left: 0;
+    }
+
+    .form-select,
+    .form-input {
+        margin: 0;
+    }
+
+    .hero-column-2 img {
+        padding: 0 55px;
+    }
+
+    /*
+    ===========================
+    TIPOS DE VACUNAS RESPONSIVE
+    ===========================
+    */
+
+    .vaccine-type-container {
+        flex-direction: column;
+    }
+
+    .vaccine-column {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    /*
+    ==================================
+    WHY SHOULD I VACCINATE? RESPONSIVE
+    ==================================
+    */
+
+    .paragraph-half {
+        width: 100%;
+    }
+
+    .benefits-container {
+        flex-direction: column;
+    }
+
+    .benefits-column {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 25px;
+    }
+
+    /*
+    ========================================
+    PREPARATIONS BEFORE VACCINATE RESPONSIVE
+    ========================================
+    */
+
+    .preparation-container {
+        flex-direction: column;
+    }
+
+    .preparations-column {
+        width: 100%;
+        padding-right: 0px;
+    }
+
+    .preparations-column:last-child {
+        padding-left: 0;
+    }
+
+    .preparations-column img {
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+
+    .preparations-paragraph {
+        width: 100%;
+    }
+
+    .accordion-box {
+        width: 100%;
+        padding: 27px 10px;
+    }
+
+    /*
+    ============================
+    EMERGENCY CONTACT RESPONSIVE
+    ============================
+    */
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-column {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .contact-column:last-child {
+        padding-left: 0px;
+    }
+
+    .emergency-img {
+        margin-top: 60px;
+    }
+
+    .emergency-text {
+        margin-bottom: 60px;
+    }
+
+    .contact-means {
+        flex-direction: column;
+    }
+
+    .contact-mean {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        padding: 40px 30px;
+    }
+
+    /*
+    =================
+    FOOTER RESPONSIVE
+    =================
+    */
+
+    .footer-info {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .footer-column-50 {
+        width: 100%;
+    }
+    
+    .footer-column-33 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-description {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .footer-credits {
+        flex-direction: column;
+    }
+
+    .footer-credits p {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-credits a {
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+        display: block;
+        text-align: center;
+    }
+
+    .triangle-section-right {
+        border-top: 70px solid transparent;
+        border-right: 60px solid #f4f6fb;
+        border-bottom: 60px solid transparent;
+    }
+
+    .triangle-section-left {
+        border-top: 70px solid transparent;
+        border-left: 60px solid #f4f6fb;
+        border-bottom: 60px solid transparent;
+    }
+}
+
