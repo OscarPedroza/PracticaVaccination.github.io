@@ -1,4 +1,4 @@
-# Practica Vaccination
+# Práctica Vaccination
 #### Practica de CSS Vaccination para la Front-end Mission de Launch X
 
 * **Link de la página web publicada:** [https://oscarpedroza.github.io/PracticaVaccination.github.io/](https://oscarpedroza.github.io/PracticaVaccination.github.io/) 
